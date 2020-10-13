@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Word</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/all.min.css">
+</head>
+<body>
+  <header class="word-header">
+    <div class="brand">
+      <i class="fa fa-list"></i>
+      <h1>Word</h1>
+      <span>New Document</span>
+    </div>
+    <nav>
+      <ul class="word-links">
+        <li>Fichier</li>
+        <li class="active">Accueil</li>
+        <li>Insertion</li>
+        <li>Mise en page</li>
+        <li>Référence</li>
+        <li>Révision</li>
+        <li>Affichage</li>
+        <li>Aide</li>
+        <li id="expand-list">
+          <i class="fas fa-arrow-down"></i>
+          <ul class="sub-links">
+            <li>Insertion</li>
+            <li>Mise en page</li>
+            <li>Référence</li>
+            <li>Révision</li>
+            <li>Affichage</li>
+            <li>Aide</li>
+          </ul>
+        </li>
+      </ul>
+      <div class="overflow">
+        <div class="accueil-actions">
+          <div class="cancel">
+            <span style="opacity: .4;pointer-events: none;" ><i class="fa fa-undo"></i></span>
+            <span id="copytext" title="copy"><i class="fa fa-copy"></i></span>
+            <span style="opacity: .4;pointer-events: none;"><i class="fa fa-paint-roller"></i></span>
+          </div>
+          <div class="fonts">
+            <span >
+              <select id="font-family" title="font family">
+                <option value="Arial">Arial</option>
+                <option value="Calibri">Calibri</option>
+                <option value="Verdana">Verdana</option>
+                <option value="Monospace">Monospace</option>
+              </select>
+              <select id="font-size" title="font-size">
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="14">14</option>
+                <option value="16">16</option>
+                <option value="18">18</option>
+                <option value="20">20</option>
+                <option value="24">24</option>
+                <option value="26">26</option>
+                <option value="28">28</option>
+                <option value="36">36</option>
+                <option value="48">48</option>
+                <option value="72">72</option>
+              </select>
+            </span>
+            <span id="increase-font-size" title="increase font size">A<sup>^</sup></span>
+            <span id="decrease-font-size" title="decrease font-size">A<sub>^</sub></span>
+            <span id="gras" title="bold"><b>G</b></span>
+            <span id="italic" title="italic"><i>I</i></span>
+            <span id="underline" title="underline" style="text-decoration: underline;">S</span>
+            <span id="background-color" title="Background color">A</span>
+            <input id="background-input" type="hidden">
+            <span id="text-color" title="text color">A</span>
+            <input id="textcolor-input" type="hidden">
+            <span id="reset-settings" title="reset">A</span>
+          </div>
+          <div class="alignments">
+            <span id="unordered-list"><i class="fa fa-list-ul"></i></span>
+            <span id="ordered-list"><i class="fa fa-list-ol"></i></span>
+            <span id="center"><i class="fa fa-align-center"></i></span>
+            <span id="left"><i class="fa fa-align-left"></i></span>
+            <span id="right"><i class="fa fa-align-right"></i></span>
+          </div>
+          <div class="headers">
+            <span id="select-header">styles</span>
+          </div>
+        </div>
+      </div>
+      <div id="header">
+        <h1>Title 1</h1>
+        <h2>Title 2</h2>
+        <h3>Title 3</h3>
+        <h4>Title 4</h4>
+        <h5>Title 5</h5>
+        <h6>Title 6</h6>
+      </div>
+    </nav>
+  </header>
+  <main class="word-main">
+    <div id="textarea" contenteditable="true">Hello world</div>
+  </main>
+  <script defer src="js/app.js"></script>
+</body>
+</html>
